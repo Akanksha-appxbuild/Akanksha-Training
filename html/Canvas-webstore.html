@@ -1,0 +1,133 @@
+<!DOCTYPE html?
+<html lang="eng">
+<head>
+<title>Canvas-Webstore</title>
+<body style="background-color:AntiqueWhite">
+<h1 style="color:#ff0066;font-family:Times New Roman;text-align:center"><b> <u>Web Store -Bakery</u> </b></h1>
+<h3 style="color: #ff3300;font-family:Times New Roman;text-align:Center"><u>From Our Kitchen To Yours.</u></h3>
+<hr>
+<h2 style="color:Black;font-family:Times New Roman;text-align:left"><b> <u>HTML Canvas</u> </b></h2>
+<canvas id="mycanvas" width="300" height="200" style="border:2px solid  #ff0066;">
+</canvas>
+
+<body>
+<canvas id="myCanvas" width="300" height="200"
+style="border:1px solid #ff0066;">
+</canvas>
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "aqua";
+ctx.fillRect(0,0,299,199);
+</script>
+</body>
+
+
+<hr>
+<body>
+<canvas id="myCanvas1" width="200" height="100" style="border:2px solid #ff0066;"></canvas>
+<script>
+var c = document.getElementById("myCanvas1");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.stroke();
+</script>
+</body>
+
+
+
+<body>
+<canvas id="myCanvas2" width="200" height="100" style="border:2px solid #ff0066;"></canvas>
+<script>
+var c = document.getElementById("myCanvas2");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke();
+</script> 
+</body>
+
+
+
+<hr>
+<body>
+<canvas id="myCanvas3" width="300" height="100" style="border:2px solid #ff0066;"></canvas>
+<script>
+var c = document.getElementById("myCanvas3");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.fillText("Welcome!!",10,50);
+</script>
+
+
+ 
+<canvas id="myCanvas4" width="300" height="100" style="border:2px solid #ff0066;"></canvas>
+<script>
+var c = document.getElementById("myCanvas4");
+var ctx = c.getContext("2d");
+ctx.font = "30px Timesnewroman";
+ctx.strokeText("Welcome!!",10,50);
+</script>
+</body>
+<body>
+
+<canvas id="myCanvas4a" width="300" height="100"
+style="border:2px solid #ff0066;">
+</canvas>
+<script>
+var canvas = document.getElementById("myCanvas4a");
+var ctx=canvas.getContext("2d");
+ctx.font="30px timesnewroman";
+ctx.fillStyle = "#ff0066";
+ctx.textAlign = "center";
+ctx.fillText("Welcome!!", canvas.width/2, canvas.height/2);
+</script>
+</body>
+
+<hr>
+<canvas id="myCanvas5a" width="200" height="100" style="border:2px solid #ff0066;"></canvas>
+<script>
+var c = document.getElementById("myCanvas5a");
+var ctx = c.getContext("2d");
+// Create gradient
+var grd = ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"aqua");
+grd.addColorStop(1,"white");
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,150,80);
+</script>
+
+<canvas id="myCanvas5b" width="200" height="100" style="border:2px solid #ff0066;"></canvas>
+<script>
+var c = document.getElementById("myCanvas5b");
+var ctx = c.getContext("2d");
+// Create gradient
+var grd = ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"white");
+grd.addColorStop(1,"aqua");
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,150,80);
+</script>
+
+<hr>
+<h4>Image</h4>
+<img id="scream" src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/luscious-cherries-toni-grote.jpg" alt="The Scream" width="220" height="227">
+<p>Canvas to fill:</p>
+<canvas id="myCanvas6" width="250" height="300" 
+style="border:1px solid  #ff0066;"> </canvas>
+
+<p><button onclick="myCanvas6( )">Try it</button></p>
+
+<script>
+function myCanvas6( ) {
+  var c = document.getElementById("myCanvas6");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("scream");
+  ctx.drawImage(img,10,10);
+}
+</script> 
+
+</html>
