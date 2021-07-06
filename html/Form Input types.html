@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<title>Forms Input Types</title>
+</head>
+<body style="background-color:AntiqueWhite">
+<h1 style="color:#ff0066;font-family:Times New Roman;text-align:Center"><b> <u>Web Store -Bakery</u> </b></h1>
+<h3 style="color: #ff3300;font-family:Times New Roman;text-align:Center"><u>From Our Kitchen To Yours.</u></h3>
+<hr>
+<h1 style="color:#000080;font-family:Times New Roman;text-align:Left">Form1-Reset</h1>
+<form action="/action_page.php">
+    <label for="fname">First Name:</label><br>
+   <input type="text" id="fname" name="fname"  value="Akanksha"><br>
+    <label for="lname">Last Name:</label><br>
+   <input type="text" id="lname" name="lname"  value="Bharne"><br>
+  <br>
+   <input type="submit" value="Submit">
+  <input type="reset">
+</form>
+<hr>
+<h1 style="color:#000080;font-family:Times New Roman;text-align:Left">Form2-Color Picker</h1>
+<form action="/action_page.php">
+     <label for="favcolor">Select your color:</label>
+     <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+     <input type="submit"  value="Submit">
+</form>
+<hr>
+<h1 style="color:#000080;font-family:Times New Roman;text-align:Left">Form3A-Input</h1>
+<form action="/action_page.php">
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday">
+      <br>
+      <input type="submit" value="Submit">
+</form>
+
+<h4 style="color:#000080;font-family:Times New Roman;text-align:Left">Form3B-Inputdate</h4>
+<form action="/action_page.php">
+           <label for="datemax">Enter a date :</label>
+          <input type="date" id="datemin" min="2000-01-02><br><br>
+         <br>
+           <label for="datemax"> Enter a date:</label>
+           <input type="date" id="datemax" max="1979-12-31"><br><br>
+
+           <input type="submit" valur="submit">
+</form>
+<h4  style="color:#000080;font-family:Times New Roman;text-align:Left">Form3C-Input-date&time</h4>
+<form action="/action_page.php">
+      <label for="birthdaytime">Birthday(date and time):</label>
+      <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+       <br>
+      <input type="submit" value="Submit">
+<h4  style="color:#000080;font-family:Times New Roman;text-align:Left">Form3D-Input-month&year</h4>
+<form action="/action_page.php">
+      <label for="birthdaymonth">Birthday(month and year):</label>
+      <input type="month" id="bdaymonth" name"bdaymonth">
+      <input type="submit" value="Submit">
+</form>
+<hr>
+<h1 style="color:#000080;font-family:Times New Roman;text-align:Left">Form4-Feild</h1>
+<form action="/action_page.php">
+      <label for="myfile">Select a file:</label>
+      <input type="file" id="myfile" name="myfile"><br>
+      <input type="submit" value="Submit">
+<br>
+</form>
+
+<h3 style="color:#000080;font-family:Times New Roman;text-align:Left">Form4B-Number Feild</h3>
+<form action="/action_page.php">
+      <label for="quantity">Quantity(between 1 and 10):</label>
+      <input type="number" id="quantity" min="1" max="10">
+       <br>
+      <input type="submit" value="Submit">
+<br>
+</form>
+<hr>
+<h1 style="color:#000080;font-family:Times New Roman;text-align:Left">Form5-Range Feild</h1>
+<form action="/action_page.php">
+      <label for="vol">Volume(between 0 to 50):</label>
+      <input type="range" id="vol" name="vol" min="0" max="50"><br>
+      <br>
+      <input type="submit" value="Submit">
+</form>
+
+</body>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<title>Forms Elements</title>
+</head>
+<body style="background-color:AntiqueWhite">
+<h1 style="color:#ff0066;font-family:Times New Roman;text-align:Center"><b> <u>Web Store -Bakery</u> </b></h1>
+<h3 style="color: #ff3300;font-family:Times New Roman;text-align:Center"><u>From Our Kitchen To Yours.</u></h3>
+<hr>
+<h1 style="color:#000080;font-family:Times New Roman;text-align:Left">Form5-Elements</h1>
+<h2 style="color:Red"><u>A.Select Elements</u></h2>
+<form action="/action_page.php">
+    <label for="Items">Choose Your Product</label><br>
+     <br>
+    <select id="Items" name="Items">
+       <option value="Macroon">Macroon</option>
+       <option value="CheeseCake">CheeseCake</option>
+       <option value="Cannolis">Cannolis</option>
+      <option value="Cupcake">Cupcake</option>
+       <option value="Desert in  glass">Desert in  glass</option>
+    </select>
+     <br>
+     <br>
+    <input type="submit" >
+   <br>
+   <br>
+
+<h2 style="color:red"><u>B.Text Area</u></h2>
+<textarea name="message"  rows="10" cols="30" ></textarea>
+<br>
+<br>
+<input type="submit" >
+</form>
+<br>
+<br>
+
+<h2 style="color:red"><u>C.Button Element</u></h2>
+<button type="button" onclick="alert('WebStore- From Our Kitchen To Yours.........Welcomes You!!')">Welcome!!</button>
+
+<h2 style="color:red"><u>D.Fieldset</u></h2>
+<form action="/action_page.php">
+<fieldset>
+   <legend>Hello</legend>
+    <label for="fname">First Name:</label><br>
+   <input type="text" id="fname" name="fname"  value="Akanksha"><br>
+    <label for="lname">Last Name:</label><br>
+   <input type="text" id="lname" name="lname"  value="Bharne"><br>
+   <br>
+   <input type="submit" value="Submit">
+</fieldset>
+</form>
+
+<h2 style="color:red"><u>E.DatalistElements</u></h2>
+<form action="/action_page.php">
+      <input list="browsers" name="browser">
+     <datalist id="browsers">
+       <option value="Macroon">
+       <option value="CheeseCake">
+       <option value="Cannolis">
+      <option value="Cupcake">
+       <option value="Desert in  glass">
+      </datalist>
+     <br>
+     <br>
+      <input type="submit">
+</form>
+   
+<h2 style="color:red"><u>F.Output</u></h2>
+<form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+     0 
+     <input type="range" id="a" value="50">
+    100+
+    <input type="range" id="b" value="50">
+    =
+    <output name="x"   for"a  b"></output>
+    <br><br>
+    <input type="submit">
+</form>
+
+</html>
