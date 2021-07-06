@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>APIs-HTML</title>
+</head>
+<body style="background-color:AntiqueWhite">
+<h1 style="color:#ff0066;font-family:Times New Roman;text-align:Center"><b> <u>Webstore-Online Bakery</u> </b></h1>
+<h1 style="color:#ff0066;font-family:Times New Roman;text-align:Center"><b> <u>HTML-APIs</u> </b></h1>
+
+<hr>
+<style>
+#div1, #div2 {
+  float: left;
+  width: 350px;
+  height: 400px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ff0066;
+}
+</style>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<h2>Drag and Drop</h2>
+<p>Drag the image back and forth between the two div elements.</p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ice_cream_with_whipped_cream%2C_chocolate_syrup%2C_and_a_wafer_%28cropped%29.jpg/220px-Ice_cream_with_whipped_cream%2C_chocolate_syrup%2C_and_a_wafer_%28cropped%29.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="350" height="350">
+</div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</body>
+</body>
+</html>
