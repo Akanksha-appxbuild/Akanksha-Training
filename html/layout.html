@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+<title>Layout-Webstore</title>
+<meta charset="UTF-8"
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+*{
+    box-sizing:border-box;
+}
+body{
+    font-family:Times new roman;
+}
+
+header{
+      background-color:Black;
+      padding:24px;
+      text-align:center;
+      font-size:30px;
+      color:white;
+}
+nav{
+   float:left;
+   width:40%
+   height:900px;
+   background:#ccc;
+  padding:20px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width:80%;
+  background-color: lightgrey;
+  text-color:WHite;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: Black;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width:900px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+ <h1 ><b> <u>Web Store</u> </b></h1>
+<h3 ><u>Always in Style</u></h3>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li ><a href="#">Ice Cream Brownie</a></li>
+      <li ><a href="#">Cake</a></li>
+      <li><a href="#">Cup Cakes</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+  <h1 style="color:#Marron;font-family:Times new roman;text-align:Center"><u><b>Ice Cream</u></b></h1>
+    <p style="color:White;font-family:Times new roman;">Ice cream (derived from earlier cream ice) is a sweetened frozen food typically eaten as a snack or dessert. It may be made from dairy milk or cream and is flavoured with a sweetener, either sugar or an alternative, and a spice, such as cocoa or vanilla, or with fruit such as strawberries or peaches. It can also be made by whisking a flavored cream base and liquid nitrogen together. Colorings are sometimes added, in addition to stabilizers. The mixture is cooled below the freezing point of water and stirred to incorporate air spaces and to prevent detectable ice crystals from forming. The result is a smooth, semi-solid foam that is solid at very low temperatures (below 2 °C or 35 °F). It becomes more malleable as its temperature increases.
+
+The meaning of the name "ice cream" varies from one country to another. Terms such as "frozen custard", "frozen yogurt", "sorbet", "gelato", and others are used to distinguish different varieties and styles. In some countries, such as the United States, "ice cream" applies only to a specific variety, and most governments regulate the commercial use of the various terms according to the relative quantities of the main ingredients, notably the amount of cream. Products that do not meet the criteria to be called ice cream are sometimes labelled "frozen dairy dessert" instead.In other countries, such as Italy and Argentina, one word is used for all variants. Analogues made from dairy alternatives, such as goat's or sheep's milk, or milk substitutes (e.g., soy, cashew, coconut, almond milk or tofu), are available for those who are lactose intolerant, allergic to dairy protein, or vegan.
+
+Ice cream may be served in dishes, for eating with a spoon, or licked from edible cones. Ice cream may be served with other desserts, such as apple pie, or as an ingredient in ice cream floats, sundaes, milkshakes, ice cream cakes and even baked items, such as Baked Alaska.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+<p style= "font-size:40px>
+</p>
+
+</body>
+</html>
+
