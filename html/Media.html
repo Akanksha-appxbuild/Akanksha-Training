@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Media-HTML</title>
+</head>
+<body style="background-color:AntiqueWhite">
+<h1 style="color:#ff0066;font-family:Times New Roman;text-align:Center"><b> <u>Web Store -Bakery</u> </b></h1>
+<h3 style="color: #ff3300;font-family:Times New Roman;text-align:Center"><u>From Our Kitchen To Yours.</u></h3>
+<hr>
+<body>
+<video width"510" controls>
+        <source src="Video.mp4"    type="video/mp4">
+        </video>
+<video width="550" height="440" controls>
+  <source src="cakevideo.mp4" type="video/mp4">
+</video>
+
+<hr>
+<h2 style="color:#ff0066;font-family:Times New Roman;text-align:Center"> <u>Video-Autoplay</u></h2>
+<div style="text-align:center">
+<video width="350" height="200" autoplay muted>
+     <source src="pestary.mp4" type="video/mp4">
+</video>
+
+<hr>
+<h2 style="color:#ff0066;font-family:Times New Roman;text-align:Center"> <u>Video-Buttons</u></h2>
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="500">
+    <source src="cake.mp4" type="video/mp4">
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</div>
+</script> 
+</body> 
+
+<hr>
+<hr>
+<h1 style="color:Black;font-family:Times New Roman;text-align:Center"><b> <u>Audio</u> </b></h1>
+<body>
+<audio controls>
+    <source src="Feel.mp3"  type="audio/mpeg">
+</audio>
+</body>
+
+<hr>
+<hr>
+<div style="text-align:left"> 
+<h1 style="color:Black;font-family:Times New Roman;text-align:Left"><b> <u>Youtube url</u> </b></h1>
+<body>
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+
+<body>
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY? autoplay=1&mute=1"  autoplay=1&mute=1">
+</iframe>
+
+</body>
+</html>
